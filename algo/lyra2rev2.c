@@ -7,7 +7,7 @@
 void lyra2rev2_hash(void *state, const void *input)
 {
 	uint32_t _ALIGN(64) hash[16];
-	LYRA2(hash, 32, input, 64, input, 64, 2, 96, 96);
+	LYRA2(hash, 32, input, 80, input, 80, 2, 96, 96);
 	memcpy(state, hash, 32);
 }
 
